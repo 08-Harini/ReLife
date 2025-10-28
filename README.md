@@ -9,7 +9,7 @@
 - Provides relevant reuse/recycle ideas instantly
   
 ## 📁 Project Files
-app.py - Main Streamlit frontend app
-items.csv - Dataset containing items, categories, and suggestions
+1. app.py - Main Streamlit frontend app
+2. items.csv - Dataset containing items, categories, and suggestions
 
 To Access the Live Page: http://localhost:8501/
