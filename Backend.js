@@ -142,6 +142,16 @@ app.get("/users", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+app.get("/uploadeditems", async (req, res) => {
+  try {
+    const snapshot = await db.collection("recyclingItems").get();
+    const items = snapshot.docs.map(doc => doc.data());
+    res.json(items);
+  } catch (error) {
+    console.error("❌ Error fetching items:", error);
+    res.status(500).send("Error fetching uploaded items");
+  }
+});
 // ✅ 5. Start Server
 const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(5000,"0.0.0.0" ,() => console.log("Server running on port 5000 "));
