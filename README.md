@@ -12,4 +12,4 @@
 1. app.py - Main Streamlit frontend app
 2. items.csv - Dataset containing items, categories, and suggestions
 
-To Access the Live Page: http://localhost:8501/
+To Access the Live Page: https://relife-fs2cbgzsbbtz4dh4jr8k2r.streamlit.app/
